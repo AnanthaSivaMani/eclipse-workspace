@@ -1,8 +1,8 @@
 package com.bird.assignment;
 
 public abstract class Bird implements Flying, Talking, Eating {
-	
-	public void eat() {
-		System.out.println("Bird.eat");
-	}
+
+  public void eat() {
+	System.out.println("Bird.eat");
+  }
 }

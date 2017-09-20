@@ -1,12 +1,12 @@
 package com.watch.assignment;
 
 public interface StopWatch {
-	
-	void start();
 
-	void pause();
+  void start();
 
-	void stop();
+  void pause();
 
-	void lapTimer();
+  void stop();
+
+  void lapTimer();
 }

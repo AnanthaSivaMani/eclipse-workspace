@@ -1,12 +1,12 @@
 package com.watch.assignment;
 
 public interface Ticking {
-	
-	int factor = 60;
 
-	void tick();
+  int factor = 60;
 
-	void minuteElapsed();
+  void tick();
 
-	void hourElapsed();
+  void minuteElapsed();
+
+  void hourElapsed();
 }
