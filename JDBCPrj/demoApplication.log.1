@@ -1,0 +1,85 @@
+[main] INFO  in.vamsoft.logging.LoggingDemo  - Main method Started
+[main] ERROR in.vamsoft.logging.LoggingDemo  - An Error Occured in Main
+java.lang.ArithmeticException: / by zero
+	at in.vamsoft.logging.LoggingDemo.main(LoggingDemo.java:14)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.JDBCDemo  - Error while establshing connection
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OracleResultSetImpl.getInt(OracleResultSetImpl.java:922)
+	at in.vamsoft.logging.JDBCDemo.main(JDBCDemo.java:29)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.JDBCDemo  - Error while establshing connection
+java.sql.SQLException: Fail to convert to internal representation
+	at oracle.jdbc.driver.CharCommonAccessor.getDouble(CharCommonAccessor.java:373)
+	at oracle.jdbc.driver.T4CVarcharAccessor.getDouble(T4CVarcharAccessor.java:896)
+	at oracle.jdbc.driver.OracleResultSetImpl.getDouble(OracleResultSetImpl.java:855)
+	at in.vamsoft.logging.JDBCDemo.main(JDBCDemo.java:29)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.JDBCDemo  - Error while establshing connection
+java.sql.SQLException: Fail to convert to internal representation
+	at oracle.jdbc.driver.CharCommonAccessor.getDouble(CharCommonAccessor.java:373)
+	at oracle.jdbc.driver.T4CVarcharAccessor.getDouble(T4CVarcharAccessor.java:896)
+	at oracle.jdbc.driver.OracleResultSetImpl.getDouble(OracleResultSetImpl.java:855)
+	at in.vamsoft.logging.JDBCDemo.main(JDBCDemo.java:30)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.JDBCDemo  - Error while establshing connection
+java.sql.SQLException: Fail to convert to internal representation
+	at oracle.jdbc.driver.CharCommonAccessor.getInt(CharCommonAccessor.java:147)
+	at oracle.jdbc.driver.T4CVarcharAccessor.getInt(T4CVarcharAccessor.java:828)
+	at oracle.jdbc.driver.OracleResultSetImpl.getInt(OracleResultSetImpl.java:942)
+	at in.vamsoft.logging.JDBCDemo.main(JDBCDemo.java:30)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - IO Error: The Network Adapter could not establish the connection
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - IO Error: The Network Adapter could not establish the connection
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - IO Error: The Network Adapter could not establish the connection
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - IO Error: The Network Adapter could not establish the connection
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - IO Error: The Network Adapter could not establish the connection
+[main] ERROR in.vamsoft.logging.data.DBConnectionUtil  - SQL Exception
+java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:458)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:546)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:236)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at in.vamsoft.logging.data.DBConnectionUtil.getConnection(DBConnectionUtil.java:34)
+	at in.vamsoft.logging.JDBCUpdateExample.main(JDBCUpdateExample.java:23)
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:392)
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:434)
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:687)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:247)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1102)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:320)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:150)
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133)
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:370)
+	... 13 more

@@ -1,0 +1,23 @@
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] ERROR in.vamsoft.logging.JDBCDemo  - Error while establshing connection
+java.sql.SQLException: Invalid operation for read only resultset: updateString
+	at oracle.jdbc.driver.BaseResultSet.updateString(BaseResultSet.java:419)
+	at in.vamsoft.logging.JDBCDemo.main(JDBCDemo.java:45)
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Main method excecuting..........
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.JDBCDemo  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
+[main] INFO  in.vamsoft.logging.data.DBConnectionUtil  - Connection Done
